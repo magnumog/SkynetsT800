@@ -22,3 +22,7 @@ ii) >> testCollisionDetection
     No collision time: 1.171875 secs
     Vertex collision time: 0.734375 secs
     Segment collision time: 0.312500 secs
+
+iii) This is the case because the algorithm returns true if it finds a point which is colliding with another segment, but if it does not find any
+     points which is colliding it has to run the whole algorothm and this takes longer time beacue it has to search every point in both polygons
+     to try to detect a collision.

@@ -1,0 +1,24 @@
+E4.7
+i) The getDistancePointToSegment can be used to check for collisions between a link and the circular object,
+   because the get distanePoint to segment measures the distance from the center of the circular object to the line created by the base of
+   robot and link. If this distance is less than the distance of the radius of the circel and the link radius 
+   there is a possibility that the objects collide.
+
+iv) The reason to that only the second link is hitting the obstacle is the distance from the base of the arm is in 0,0 and the distance(manhattan distance) 
+    from the base to the center of the circle is 1,4142 this means that the first link will not reach it because it is not long enough.
+
+E4.8
+ii) >> testCollisionDetection
+
+    Testing polygon collision detector
+
+    No collision check passed
+    Vertex collision check passed
+    Segment collision check passed
+    Coincident collision check passed
+
+    Timing 1000 collision checks
+
+    No collision time: 1.171875 secs
+    Vertex collision time: 0.734375 secs
+    Segment collision time: 0.312500 secs

@@ -1,0 +1,16 @@
+function freeConfigs = computeTwoPolyLinkFreePoints( sampleList, link1BaseRef,link1PolyRef, link2BaseRef, link2PolyRef, ObstacleList )
+
+    freeConfigs = [];
+    numberOfCollisionsDetected = 0;
+    for i=1:size(sampleList(:,1))
+        alfa = sampleList(i,1);
+        beta = sampleList(i,2);
+        [polygonOne, base] = displaceLinkPoly(link1Poly,alpha,link1BaseRef,link2BaseRef);
+        [polygonTwo, manipulator] = displaceLinkPoly(link2Poly,alpha+beta,base,[0,0]);
+        for j=1:length(ObstacleList)
+            if(checkCollisionBetweenPolygons(polygonOne,Obstac
+        end
+        
+        
+    end
+end

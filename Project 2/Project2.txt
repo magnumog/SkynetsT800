@@ -1,4 +1,13 @@
 E5.4 - Project2
-iii) Include a printout of this figure, along with a short description explaining the angles and translations for each of the polygons.
+iii) 	Include a printout of this figure, along with a short description explaining the angles and translations for each of the polygons.
 	Text
 
+Part 2
+iv) 	The slowest part of the code is the part where you compute the adjacency table, this is because the uniform grid is randomly
+	choosen and therefore you may have many points which is connected. Because they lay inside the maxRadius distance
+	The worst case is where all the points is connected to eachother because they all are inside the maxRadius distance,
+	then all the points whould be connected and the runtime whould be O(n^2)
+
+v)	The changes whould do to the connection rule to make it guarabtee connectivity is.....
+
+vi)	

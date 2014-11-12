@@ -261,4 +261,4 @@ for row = 1:size(cSpacePath,1)
     
 end
 
-%movieObj = close(movieObj);
+movieObj = close(movieObj);

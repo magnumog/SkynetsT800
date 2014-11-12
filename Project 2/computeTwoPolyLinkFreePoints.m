@@ -12,7 +12,8 @@ function freeConfigs = computeTwoPolyLinkFreePoints( sampleList, link1BaseRef,li
                 collisionDetected = true;
             end
         end
-        if(collisionDetected)
+        %If no collision detected add space to free configspace
+        if(not(collisionDetected))
            freeConfigs(size(freeConfigs,1)+1,:) = [alfa,beta];
         end
         collisionDetected = false;

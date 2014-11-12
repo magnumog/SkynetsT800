@@ -198,13 +198,13 @@ toc
 
 fig=figure;
 
-filename = '2-linkMovieb.avi';
+filename = '2-linkMoviebV_2.avi';
 delete(filename);
-movieObj = avifile('2-linkMovieb.avi');
+movieObj = avifile('2-linkMoviebV_2.avi');
 movieObj.Quality = 100;
 % If you have trouble playing the movie, try changing the compression type,
 % see help avifile for more info.
-movieObj.Compression = 'Indeo5';
+movieObj.Compression = 'None';
 movieObj.Fps = 10.0;
 
 set(fig,'DoubleBuffer','on');
@@ -261,4 +261,4 @@ for row = 1:size(cSpacePath,1)
     
 end
 
-movieObj = close(movieObj);
+%movieObj = close(movieObj);

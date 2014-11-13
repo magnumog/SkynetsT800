@@ -8,6 +8,6 @@ iv) 	The slowest part of the code is the part where you compute the adjacency ta
 	The worst case is where all the points is connected to eachother because they all are inside the maxRadius distance,
 	then all the points whould be connected and the runtime whould be O(n^2)
 
-v)	The changes whould do to the connection rule to make it guarabtee connectivity is.....
+v)	The changes whould do to the connection rule to make it guarantee connectivity is.....
 
-vi)	
+vi)	video link: https://www.youtube.com/watch?v=AMnPV1j-JFQ

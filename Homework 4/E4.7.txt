@@ -4,7 +4,7 @@ i) The getDistancePointToSegment can be used to check for collisions between a l
    robot and link. If this distance is less than the distance of the radius of the circel and the link radius 
    there is a possibility that the objects collide.
 
-iv) The reason to that only the second link is hitting the obstacle is the distance from the base of the arm is in 0,0 and the distance(manhattan distance) 
+iv) The reason to that only the second link is hitting the obstacle is the distance from the base of the arm is in 0,0 and the distance(eucledian distance) 
     from the base to the center of the circle is 1,4142 this means that the first link will not reach it because it is not long enough.
 
 E4.8

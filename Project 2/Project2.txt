@@ -1,13 +1,17 @@
-E5.4 - Project2
-iii) 	Include a printout of this figure, along with a short description explaining the angles and translations for each of the polygons.
-	Text
+E5.4 - Project2 Magnus Settemsli Mogstad Perm:X283245
+
+iii) 	The angles of the polygons are defined by the x and y value in the shown roadmap, the first links angel is given by the x axis value and the
+	second link angle is given by the y value. The translation for the first link is given by its base point(which it rotates around), the 	second
+	links translation and rotation point is given by the point it is conected to the first link. The degree of rotation is the difference between
+	the goal and start node.
 
 Part 2
-iv) 	The slowest part of the code is the part where you compute the adjacency table, this is because the uniform grid is randomly
-	choosen and therefore you may have many points which is connected. Because they lay inside the maxRadius distance
-	The worst case is where all the points is connected to eachother because they all are inside the maxRadius distance,
-	then all the points whould be connected and the runtime whould be O(n^2)
+iv) 	The slowest part of the code is the part where you compute the adjacency table, this is you have to check for every point against each other
+	if the points are within the connectivity radius of the other point. if it is you must add it to the adjtable, if not the points are not connected.
 
-v)	The changes whould do to the connection rule to make it guarantee connectivity is.....
+v)	To make the connection rule guarantee connectivity I whould just sett a connectivity radius which is so big I know the graph will be connected,
+	the problem here is that if you make the radius to big the graph will connect in areas which the robots are not allowed to move.
+	To solve this problem and make the connection rule secure I whould find the distance from one random point to every other point and then take the
+	average of these distances to find the best connection radius. This whould hopefully find a good radius and make the graph connected and secure.
 
 vi)	video link: https://www.youtube.com/watch?v=AMnPV1j-JFQ
